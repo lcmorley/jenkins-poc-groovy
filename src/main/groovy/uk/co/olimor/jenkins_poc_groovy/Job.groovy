@@ -1,4 +1,4 @@
-package uk.co.olimor.jenkins_poc_groovy;
+package main.groovy.uk.co.olimor.jenkins_poc_groovy;
 
 public class Job {
 
