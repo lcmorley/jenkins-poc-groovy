@@ -1,5 +1,3 @@
-import uk.co.olimor.jenkins_poc_groovy.Job;
-
  def call(body) {
 
         def config = [:]
@@ -10,11 +8,10 @@ import uk.co.olimor.jenkins_poc_groovy.Job;
         node {
             try {
                 stage ('Build') {
-                    new Job().build();
                     sh "echo 'building ${config.projectName} ...'"
                 }
                 stage ('Tests') {
-                   new Job().checkout();
+                    sh "echo 'testing'"
                 }
             } catch (err) {
                 currentBuild.result = 'FAILED'
