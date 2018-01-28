@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-import uk.co.olimor.jenkins_poc_groovy.Job 
+import main.groovy.uk.co.olimor.jenkins_poc_groovy.Job 
 
 def call(body) {
 
