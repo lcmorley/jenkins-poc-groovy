@@ -8,6 +8,7 @@
         node {
             try {
                 stage ('Build') {
+new Job().build()
                     sh "echo 'building ${config.projectName} ...'"
                 }
                 stage ('Tests') {
