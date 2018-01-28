@@ -1,4 +1,6 @@
- def call(body) {
+import uk.co.olimor.jenkins_poc_groovy.Job 
+
+def call(body) {
 
         def config = [:]
         body.resolveStrategy = Closure.DELEGATE_FIRST
