@@ -10,7 +10,7 @@ def call(body) {
 
         node {
             try {
-                stage ('Build') {
+                stage ('Build you idiot') {
 new main.groovy.uk.co.olimor.jenkins_poc_groovy.Job().build()
                     sh "echo 'building ${config.projectName} ...'"
                 }
